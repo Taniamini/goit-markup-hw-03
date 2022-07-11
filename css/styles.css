@@ -14,15 +14,6 @@
   --bg-btn-cl: #f5f4fa;
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
 
 body {
   font-family: var(--main-font);
@@ -39,8 +30,29 @@ body {
 .list {
   list-style: none;
 }
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* Header secthion */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ECECEC;
+}
+
 .nav-header-link {
   font-family: var(--second-font);
   font-weight: 700;
@@ -84,6 +96,8 @@ body {
 /* Footer */
 .footer {
   background-color: var(--bg-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-link {
@@ -121,16 +135,19 @@ body {
 /* Hero section */
 .hero {
   background-color: var(--bg-cl);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--second-cl);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -142,6 +159,7 @@ body {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
+  padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -151,6 +169,20 @@ body {
 }
 
 /* About section */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .about-title {
   font-weight: 700;
   font-size: 14px;
@@ -158,6 +190,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-txt-cl);
+  margin-bottom: 10px;
 }
 
 .about-subtitle {
@@ -168,6 +201,7 @@ body {
 }
 
 /* Work section */
+
 .work-title {
   font-weight: 700;
   font-size: 36px;
@@ -175,11 +209,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+  margin-bottom: 50px;
 }
 
 /* Team section */
 .team {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 
 .team-main-title {
@@ -189,6 +224,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+  margin-bottom: 50px;
 }
 
 .team-title {
